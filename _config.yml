@@ -3,9 +3,9 @@
 # ----------------------- #
 
 url: http://mizanRahman.github.io
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+title: ThoughtSource
+subtitle: My random thoughts
+author: Mizan Rahman 
 simple_search: http://google.com/search
 description:
 
@@ -17,9 +17,9 @@ date_format: "ordinal"
 
 # RSS / Email (optional) subscription links (change if using something like Feedburner)
 subscribe_rss: /atom.xml
-subscribe_email:
+subscribe_email: mizan.cse.buet@gmail.com
 # RSS feeds can list your email address if you like
-email:
+email: mizan.cse.buet@gmail.com
 
 # ----------------------- #
 #    Jekyll & Plugins     #
@@ -58,17 +58,17 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.
 # ----------------------- #
 
 # Github repositories
-github_user:
-github_repo_count: 0
+github_user: mizanRahman
+github_repo_count: 5
 github_show_profile_link: true
 github_skip_forks: true
 
 # Twitter
-twitter_user:
+twitter_user: khanmizan
 twitter_tweet_button: true
 
 # Google +1
-google_plus_one: false
+google_plus_one: true
 google_plus_one_size: medium
 
 # Google Plus Profile
@@ -81,12 +81,12 @@ pinboard_user:
 pinboard_count: 3
 
 # Delicious
-delicious_user:
+delicious_user: mizan.cse.buet
 delicious_count: 3
 
 # Disqus Comments
-disqus_short_name:
-disqus_show_comment_count: false
+disqus_short_name: thoughtsource
+disqus_show_comment_count: true
 
 # Google Analytics
 google_analytics_tracking_id:
