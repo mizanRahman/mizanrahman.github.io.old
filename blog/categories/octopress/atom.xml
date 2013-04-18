@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[ThoughtSource]]></title>
-  <link href="http://mizanRahman.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: octopress | ThoughtSource]]></title>
+  <link href="http://mizanRahman.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://mizanRahman.github.io/"/>
   <updated>2013-04-18T19:53:20+06:00</updated>
   <id>http://mizanRahman.github.io/</id>
