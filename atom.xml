@@ -4,7 +4,7 @@
   <title><![CDATA[ThoughtSource]]></title>
   <link href="http://mizanRahman.github.io/atom.xml" rel="self"/>
   <link href="http://mizanRahman.github.io/"/>
-  <updated>2013-04-18T20:37:32+06:00</updated>
+  <updated>2013-04-23T17:00:57+06:00</updated>
   <id>http://mizanRahman.github.io/</id>
   <author>
     <name><![CDATA[Mizan Rahman]]></name>
@@ -12,6 +12,29 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[debugging and testing windows service applicaitons: a better approach]]></title>
+    <link href="http://mizanRahman.github.io/blog/2013/04/23/running-windows-service-as-as-console-application/"/>
+    <updated>2013-04-23T16:55:00+06:00</updated>
+    <id>http://mizanRahman.github.io/blog/2013/04/23/running-windows-service-as-as-console-application</id>
+    <content type="html"><![CDATA[<h2>Running as a console application:</h2>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, tenetur voluptates dolore distinctio at aliquam dolorem. Doloremque, molestias doloribus similique suscipit dicta nulla quia inventore aliquid distinctio tempore. Unde, distinctio?</p>
+
+<div><script src='https://gist.github.com/5441890.js'></script>
+<noscript><pre><code></code></pre></noscript></div>
+
+
+<h2>Creating a seperate windows form app for debugging:</h2>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quaerat, maiores, minus commodi eaque consequuntur explicabo iure suscipit incidunt numquam temporibus deleniti nesciunt molestiae aliquid minima aperiam dolorem omnis odit.</p>
+
+<h2>Debugging existing windows service appication:</h2>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, a, expedita, voluptates atque enim consequuntur quasi soluta iusto minus quidem provident architecto eligendi consequatur? Numquam odit voluptate cupiditate quis reiciendis.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Octopress: Why and How]]></title>
