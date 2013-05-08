@@ -1,3 +1,12 @@
+##necessary instructions:
+
+[deploying to github](http://octopress.org/docs/deploying/github/)
+
+add github as remote:
+'''
+git remote add github https://github.com/mizanrahman/octopress.git
+'''
+
 ## What is Octopress?
 
 Octopress is [Jekyll](https://github.com/mojombo/jekyll) blogging at its finest.
