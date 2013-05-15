@@ -4,7 +4,7 @@
   <title><![CDATA[ThoughtSource]]></title>
   <link href="http://mizanRahman.github.io/atom.xml" rel="self"/>
   <link href="http://mizanRahman.github.io/"/>
-  <updated>2013-05-02T17:45:35+06:00</updated>
+  <updated>2013-05-15T16:32:53+06:00</updated>
   <id>http://mizanRahman.github.io/</id>
   <author>
     <name><![CDATA[Mizan Rahman]]></name>
@@ -63,9 +63,12 @@
     <link href="http://mizanRahman.github.io/blog/2013/04/23/running-windows-service-as-as-console-application/"/>
     <updated>2013-04-23T16:55:00+06:00</updated>
     <id>http://mizanRahman.github.io/blog/2013/04/23/running-windows-service-as-as-console-application</id>
-    <content type="html"><![CDATA[<h2>Running as a console application:</h2>
+    <content type="html"><![CDATA[<p>One of the major boring part of working with windows service applications is to debug and test it. every time we need to install the service to test or debug it. also it is impoissible to hold the execution with a breakpoint in the onstart method of service.
+We can apply some tricks to cover this.</p>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, tenetur voluptates dolore distinctio at aliquam dolorem. Doloremque, molestias doloribus similique suscipit dicta nulla quia inventore aliquid distinctio tempore. Unde, distinctio?</p>
+<h2>Running as a console application:</h2>
+
+<p>The application can be tested as a console application in development time by changing the constructor.</p>
 
 <div><script src='https://gist.github.com/5441890.js'></script>
 <noscript><pre><code></code></pre></noscript></div>
@@ -73,11 +76,12 @@
 
 <h2>Creating a seperate windows form app for debugging:</h2>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quaerat, maiores, minus commodi eaque consequuntur explicabo iure suscipit incidunt numquam temporibus deleniti nesciunt molestiae aliquid minima aperiam dolorem omnis odit.</p>
+<p>We can add a seperate windows form project in the solution dedicated to testing. the main application will be developed as a seperate projects which will have start, stop, pause methods.
+A seperate project will be created for implementing windows service. this service will call corresponding start,stop methods of the main application. another win form app will also call those methods at its button events.</p>
 
 <h2>Debugging existing windows service appication:</h2>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, a, expedita, voluptates atque enim consequuntur quasi soluta iusto minus quidem provident architecto eligendi consequatur? Numquam odit voluptate cupiditate quis reiciendis.</p>
+<p>however existing windows service applications can be debugged by running the service after installing and attach the process from source code.</p>
 ]]></content>
   </entry>
   
