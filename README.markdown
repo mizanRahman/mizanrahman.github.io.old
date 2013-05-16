@@ -1,6 +1,5 @@
 ##necessary instructions:
-post:
-rake new_post["title"]
+new post: `rake new_post["title"]`
 
 ###Deploying to Github Pages:
 

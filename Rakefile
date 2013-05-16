@@ -298,6 +298,20 @@ task :set_root_dir, :dir do |t, args|
   end
 end
 
+
+desc "commit source to github"
+task :sync do
+  puts "syncing source files to github"
+  system "git add ."
+  puts "\n## Commiting: Site updated at #{Time.now.utc}"
+  message = "Site updated at #{Time.now.utc}"
+  system "git commit -m \"#{message}\""
+  puts "\n## Pushing source files"
+  system "git push origin source"
+  puts "\n##Source Sync completed"
+end
+
+
 desc "Set up _deploy folder and deploy branch for Github Pages deployment"
 task :setup_github_pages, :repo do |t, args|
   if args.repo

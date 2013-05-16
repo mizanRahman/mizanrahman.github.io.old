@@ -10,7 +10,7 @@ Why to use octopress
 ====================
 
 There are many blogging platforms out there for years of blogging history. so what is the actual reason people now become so excited about octopress and switch there?
-
+<!-- more -->
 Well, its really coders way of blogging. blogging as coding.
 
 Here is a sample jsfiddle you can add to your blog.
