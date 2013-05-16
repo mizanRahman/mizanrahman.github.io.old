@@ -304,7 +304,7 @@ task :sync do
   puts "syncing source files to github"
   system "git add ."
   puts "\n## Commiting: Site updated at #{Time.now.utc}"
-  message = "Site updated at #{Time.now.utc}"
+  message = "Source updated at #{Time.now.utc}"
   system "git commit -m \"#{message}\""
   puts "\n## Pushing source files"
   system "git push origin source"
