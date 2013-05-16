@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: editor | ThoughtSource]]></title>
+  <link href="http://mizanRahman.github.io/blog/categories/editor/atom.xml" rel="self"/>
+  <link href="http://mizanRahman.github.io/"/>
+  <updated>2013-05-16T16:53:17+06:00</updated>
+  <id>http://mizanRahman.github.io/</id>
+  <author>
+    <name><![CDATA[Mizan Rahman]]></name>
+    <email><![CDATA[mizan.cse.buet@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Top Sublime Text 2 Plugins/Themes which I use the most]]></title>
+    <link href="http://mizanRahman.github.io/blog/2013/05/16/top-sublime-text-2-plugins-which-i-use-the-most/"/>
+    <updated>2013-05-16T16:13:00+06:00</updated>
+    <id>http://mizanRahman.github.io/blog/2013/05/16/top-sublime-text-2-plugins-which-i-use-the-most</id>
+    <content type="html"><![CDATA[<p>Here are the list of Sublime text 2 Plugins which I use the most. Check out!!</p>
+
+<!-- more -->
+
+
+<ul>
+<li>package Control</li>
+<li>Git</li>
+<li>Gist</li>
+<li>Emmet</li>
+<li>sublime Linter</li>
+<li>JSForman</li>
+<li>JSMinifier</li>
+<li>alignment</li>
+<li>jquery</li>
+<li>bracket Highlighter</li>
+<li>sftp</li>
+<li>live Reload</li>
+<li>Ruby On Rails Snippets</li>
+<li>twitter Bootstrap Snippets</li>
+</ul>
+
+
+<p>My Favourite Theme:</p>
+
+<ul>
+<li>Soda Dark</li>
+</ul>
+
+
+<p>Please let me know which plugins you use!! And which one you like the most..</p>
+]]></content>
+  </entry>
+  
+</feed>

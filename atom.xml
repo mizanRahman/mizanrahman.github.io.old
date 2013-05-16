@@ -4,7 +4,7 @@
   <title><![CDATA[ThoughtSource]]></title>
   <link href="http://mizanRahman.github.io/atom.xml" rel="self"/>
   <link href="http://mizanRahman.github.io/"/>
-  <updated>2013-05-15T16:32:53+06:00</updated>
+  <updated>2013-05-16T16:53:16+06:00</updated>
   <id>http://mizanRahman.github.io/</id>
   <author>
     <name><![CDATA[Mizan Rahman]]></name>
@@ -14,11 +14,53 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Top Sublime Text 2 Plugins/Themes which I use the most]]></title>
+    <link href="http://mizanRahman.github.io/blog/2013/05/16/top-sublime-text-2-plugins-which-i-use-the-most/"/>
+    <updated>2013-05-16T16:13:00+06:00</updated>
+    <id>http://mizanRahman.github.io/blog/2013/05/16/top-sublime-text-2-plugins-which-i-use-the-most</id>
+    <content type="html"><![CDATA[<p>Here are the list of Sublime text 2 Plugins which I use the most. Check out!!</p>
+
+<!-- more -->
+
+
+<ul>
+<li>package Control</li>
+<li>Git</li>
+<li>Gist</li>
+<li>Emmet</li>
+<li>sublime Linter</li>
+<li>JSForman</li>
+<li>JSMinifier</li>
+<li>alignment</li>
+<li>jquery</li>
+<li>bracket Highlighter</li>
+<li>sftp</li>
+<li>live Reload</li>
+<li>Ruby On Rails Snippets</li>
+<li>twitter Bootstrap Snippets</li>
+</ul>
+
+
+<p>My Favourite Theme:</p>
+
+<ul>
+<li>Soda Dark</li>
+</ul>
+
+
+<p>Please let me know which plugins you use!! And which one you like the most..</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[SSL and CA Certificates: How it works]]></title>
     <link href="http://mizanRahman.github.io/blog/2013/05/02/ssl-and-ca-certificates-how-it-works/"/>
     <updated>2013-05-02T13:35:00+06:00</updated>
     <id>http://mizanRahman.github.io/blog/2013/05/02/ssl-and-ca-certificates-how-it-works</id>
     <content type="html"><![CDATA[<p>The Secure Socket Layer protocol was created by Netscape to ensure secure transactions between web servers and browsers. The protocol uses a third party, a Certificate Authority (CA), to identify one end or both end of the transactions. This is in short how it works.</p>
+
+<!-- more -->
+
 
 <ol>
 <li><p>A browser requests a secure page (usually https://).</p></li>
@@ -66,6 +108,9 @@
     <content type="html"><![CDATA[<p>One of the major boring part of working with windows service applications is to debug and test it. every time we need to install the service to test or debug it. also it is impoissible to hold the execution with a breakpoint in the onstart method of service.
 We can apply some tricks to cover this.</p>
 
+<!-- more -->
+
+
 <h2>Running as a console application:</h2>
 
 <p>The application can be tested as a console application in development time by changing the constructor.</p>
@@ -93,6 +138,9 @@ A seperate project will be created for implementing windows service. this servic
     <content type="html"><![CDATA[<h1>Why to use octopress</h1>
 
 <p>There are many blogging platforms out there for years of blogging history. so what is the actual reason people now become so excited about octopress and switch there?</p>
+
+<!-- more -->
+
 
 <p>Well, its really coders way of blogging. blogging as coding.</p>
 
