@@ -4,7 +4,7 @@
   <title><![CDATA[Category: blog | ThoughtSource]]></title>
   <link href="http://mizanRahman.github.io/blog/categories/blog/atom.xml" rel="self"/>
   <link href="http://mizanRahman.github.io/"/>
-  <updated>2013-05-16T16:53:17+06:00</updated>
+  <updated>2013-06-14T19:09:18+06:00</updated>
   <id>http://mizanRahman.github.io/</id>
   <author>
     <name><![CDATA[Mizan Rahman]]></name>
@@ -28,7 +28,7 @@
 <p>Well, its really coders way of blogging. blogging as coding.</p>
 
 <p>Here is a sample jsfiddle you can add to your blog.
-{% jsfiddle uj7VV default presentation  %}</p>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/uj7VV/embedded/js,resources,html,css,result/presentation/"></iframe></p>
 ]]></content>
   </entry>
   
