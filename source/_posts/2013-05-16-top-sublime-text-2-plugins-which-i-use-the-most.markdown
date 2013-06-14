@@ -13,12 +13,12 @@ Here are the list of Sublime text 2 Plugins which I use the most. Check out!!
 - Git
 - Gist
 - Emmet
-- sublime Linter
-- JSForman
+- Sublime Linter
+- JSFormat
 - JSMinifier
-- alignment
-- jquery
-- bracket Highlighter
+- Alignment
+- Jquery
+- Bracket Highlighter
 - sftp
 - live Reload
 - Ruby On Rails Snippets
