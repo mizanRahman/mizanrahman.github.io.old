@@ -7,6 +7,7 @@ categories: favourite editor
 ---
 
 Here are the list of Sublime text 2 Plugins which I use the most. Check out!!
+-----------------------------------------------------------------------------
 <!-- more -->
 - package Control 
 - Git
@@ -25,6 +26,7 @@ Here are the list of Sublime text 2 Plugins which I use the most. Check out!!
 
 
 My Favourite Theme:
+-------------------
 
 - Soda Dark
 
