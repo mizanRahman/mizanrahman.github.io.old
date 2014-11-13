@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: blog | ThoughtSource]]></title>
+  <link href="http://mizanRahman.github.io/blog/categories/blog/atom.xml" rel="self"/>
+  <link href="http://mizanRahman.github.io/"/>
+  <updated>2014-11-13T22:16:04+06:00</updated>
+  <id>http://mizanRahman.github.io/</id>
+  <author>
+    <name><![CDATA[Mizan Rahman]]></name>
+    <email><![CDATA[mizan.cse.buet@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress: Why and How]]></title>
+    <link href="http://mizanRahman.github.io/blog/2013/04/18/octopress-why-and-how/"/>
+    <updated>2013-04-18T19:50:00+06:00</updated>
+    <id>http://mizanRahman.github.io/blog/2013/04/18/octopress-why-and-how</id>
+    <content type="html"><![CDATA[<h1>Why to use octopress</h1>
+
+<p>There are many blogging platforms out there for years of blogging history. so what is the actual reason people now become so excited about octopress and switch there?</p>
+
+<!-- more -->
+
+
+<p>Well, its really coders way of blogging. blogging as coding.</p>
+
+<p>Here is a sample jsfiddle you can add to your blog.
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/uj7VV/embedded/js,resources,html,css,result/presentation/"></iframe></p>
+]]></content>
+  </entry>
+  
+</feed>

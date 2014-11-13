@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[ThoughtSource]]></title>
+  <link href="http://mizanRahman.github.io/atom.xml" rel="self"/>
+  <link href="http://mizanRahman.github.io/"/>
+  <updated>2014-11-13T22:16:04+06:00</updated>
+  <id>http://mizanRahman.github.io/</id>
+  <author>
+    <name><![CDATA[Mizan Rahman]]></name>
+    <email><![CDATA[mizan.cse.buet@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[rails project creation through templating]]></title>
+    <link href="http://mizanRahman.github.io/blog/2014/04/07/rails-project-creation-through-templating/"/>
+    <updated>2014-04-07T22:55:00+06:00</updated>
+    <id>http://mizanRahman.github.io/blog/2014/04/07/rails-project-creation-through-templating</id>
+    <content type="html"><![CDATA[<p>every ruby on rails developer has a choice of gems and plugins to use in every project, or have to choose one from a list of choice. I was thinking about something by which I can automate this step. while starting a new project I had to do those repeating tasks each time.</p>
+
+<p>we can automate this part with extending rails generator through templating. rails generators have api for doig this.</p>
+
+<p>there is some open source project out there dedicated for this task. we can also use those. my choice is rails app composer.</p>
+
+<p>just generate your new project with this command:</p>
+
+<pre><code>rails new myapp -m https://raw.github.com/RailsApps/rails-composer/master/composer.rb
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Top Sublime Text 2 Plugins/Themes which I use the most]]></title>
+    <link href="http://mizanRahman.github.io/blog/2013/05/16/top-sublime-text-2-plugins-which-i-use-the-most/"/>
+    <updated>2013-05-16T16:13:00+06:00</updated>
+    <id>http://mizanRahman.github.io/blog/2013/05/16/top-sublime-text-2-plugins-which-i-use-the-most</id>
+    <content type="html"><![CDATA[<h2>Here are the list of Sublime text 2 Plugins which I use the most. Check out!!</h2>
+
+<!-- more -->
+
+
+<ul>
+<li>package Control</li>
+<li>Git</li>
+<li>Gist</li>
+<li>Emmet</li>
+<li>Sublime Linter</li>
+<li>JSFormat</li>
+<li>JSMinifier</li>
+<li>Alignment</li>
+<li>Jquery</li>
+<li>Bracket Highlighter</li>
+<li>sftp</li>
+<li>Ruby On Rails Snippets</li>
+<li>twitter Bootstrap Snippets</li>
+</ul>
+
+
+<h2>My Favourite Theme:</h2>
+
+<ul>
+<li>Soda Dark</li>
+</ul>
+
+
+<p>Please let me know which plugins you use!! And which one you like the most..</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[SSL and CA Certificates: How it works]]></title>
+    <link href="http://mizanRahman.github.io/blog/2013/05/02/ssl-and-ca-certificates-how-it-works/"/>
+    <updated>2013-05-02T13:35:00+06:00</updated>
+    <id>http://mizanRahman.github.io/blog/2013/05/02/ssl-and-ca-certificates-how-it-works</id>
+    <content type="html"><![CDATA[<p>The Secure Socket Layer protocol was created by Netscape to ensure secure transactions between web servers and browsers. The protocol uses a third party, a Certificate Authority (CA), to identify one end or both end of the transactions. This is in short how it works.</p>
+
+<!-- more -->
+
+
+<ol>
+<li><p>A browser requests a secure page (usually https://).</p></li>
+<li><p>The web server sends its public key with its certificate.</p></li>
+<li><p>The browser checks that the certificate was issued by a trusted party (usually a trusted root CA), that the certificate is still valid and that the certificate is related to the site contacted.</p></li>
+<li><p>The browser then uses the public key, to encrypt a random symmetric encryption key and sends it to the server with the encrypted URL required as well as other encrypted http data.</p></li>
+<li><p>The web server decrypts the symmetric encryption key using its private key and uses the symmetric key to decrypt the URL and http data.</p></li>
+<li><p>The web server sends back the requested html document and http data encrypted with the symmetric key.</p></li>
+<li><p>The browser decrypts the http data and html document using the symmetric key and displays the information.</p></li>
+</ol>
+
+
+<p>Your server has a certificate, consisting of a private and a public key. The server never gives out the private key of course, but everyone may get the public key. The public key is embedded within a certificate container format. This format contains the IP address or domain name of the server, the owner of this IP address/domain name, an e-mail address of the owner, etc.</p>
+
+<p>The whole thing is signed by a trusted authority. The trusted authority, aka certificate authority (CA) also has a private/public key pair. You give them your certificate, they verify that the information in the container are correct and sign the it by their private key, only they have access to.</p>
+
+<p>The public key of the CA is installed on the user system by default, most well known CAs are included already in the default installation of your favorite OS or browser.</p>
+
+<p>When now a user connects to your server, your server uses the private key to sign some data, packs that signed data together with its public key and sends everything to the client.</p>
+
+<p>What can the client now do? First of all, it can use the public key it just got sent to verify the signed data. Since only the owner of the private key is able to sign the data correctly in such a way that the public key can verify the signature, it knows that whoever signed this piece of data, this person is owning the private key to the received public key. So far so well. But what stops a hacker to intercept the packet, replace the signed data with data he signed using a different certificate and also replace the public key with his public key? Nothing.</p>
+
+<p>That&#8217;s why after the signed data has been verified (or before it is verified) the client verifies that the received public key has a valid CA signature. Using the already installed public CA key, it verifies that the received public key has been signed by a known CA. Otherwise it is rejected (as a hacker may have replaced it on the way).</p>
+
+<p>Last but not least, it checks the information within the public key container. Does the IP address or domain name really match the IP address or domain name of the server the client is currently talking to? If not, something is fishy!</p>
+
+<p>People may ask: What stops a hacker from just creating his own keypair and just putting your domain name or IP address into the cert? Easy: If he does that, no CA will sign his key. To get a CA signature, you must prove that you are really the owner of this IP address or domain name. The hacker is not, he cannot prove that, he won&#8217;t get a signature. So this won&#8217;t work.</p>
+
+<p>Okay, how about the hacker registers his own domain, create a certificate for that, and have that signed by a CA? This works, he will get it CA signed, it&#8217;s his domain, no problem. However he cannot use this when hacking your connection. If he uses this certificate, the browser will immediately see that the signed public key is for domain example.net, but it is currently talking to example.com, not the same domain, thus something is fishy again.</p>
+
+<p>More readings:</p>
+
+<ul>
+<li><a href="http://www.tldp.org/HOWTO/SSL-Certificates-HOWTO/x64.html">SSL Certificates: HOWTO</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[debugging and testing windows service applicaitons: a better approach]]></title>
+    <link href="http://mizanRahman.github.io/blog/2013/04/23/running-windows-service-as-as-console-application/"/>
+    <updated>2013-04-23T16:55:00+06:00</updated>
+    <id>http://mizanRahman.github.io/blog/2013/04/23/running-windows-service-as-as-console-application</id>
+    <content type="html"><![CDATA[<p>One of the major boring part of working with windows service applications is to debug and test it. every time we need to install the service to test or debug it. also it is impoissible to hold the execution with a breakpoint in the onstart method of service.
+We can apply some tricks to cover this.</p>
+
+<!-- more -->
+
+
+<h2>Running as a console application:</h2>
+
+<p>The application can be tested as a console application in development time by changing the constructor.</p>
+
+<h2>Creating a seperate windows form app for debugging:</h2>
+
+<p>We can add a seperate windows form project in the solution dedicated to testing. the main application will be developed as a seperate projects which will have start, stop, pause methods.
+A seperate project will be created for implementing windows service. this service will call corresponding start,stop methods of the main application. another win form app will also call those methods at its button events.</p>
+
+<h2>Debugging existing windows service appication:</h2>
+
+<p>however existing windows service applications can be debugged by running the service after installing and attach the process from source code.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress: Why and How]]></title>
+    <link href="http://mizanRahman.github.io/blog/2013/04/18/octopress-why-and-how/"/>
+    <updated>2013-04-18T19:50:00+06:00</updated>
+    <id>http://mizanRahman.github.io/blog/2013/04/18/octopress-why-and-how</id>
+    <content type="html"><![CDATA[<h1>Why to use octopress</h1>
+
+<p>There are many blogging platforms out there for years of blogging history. so what is the actual reason people now become so excited about octopress and switch there?</p>
+
+<!-- more -->
+
+
+<p>Well, its really coders way of blogging. blogging as coding.</p>
+
+<p>Here is a sample jsfiddle you can add to your blog.</p>
+
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/uj7VV/embedded/js,resources,html,css,result/presentation/"></iframe>
+
+]]></content>
+  </entry>
+  
+</feed>
